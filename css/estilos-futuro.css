@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+/* CONTENEDORES */
+
+body {
+    background-image: url(../img/pexels-frank-cone-3279307.jpg);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto Mono', sans-serif
+}
+
+fieldset {
+    width: 40vw;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.623);
+    border-width: 3px;
+    border-image: linear-gradient(152deg, rgba(9,0,113,1) 0%, rgba(21,21,204,1) 53%, rgba(0,212,255,1) 100%) 1;
+    margin: 1%;
+    padding: 2%;
+}
+
+legend, legend span {
+    font-family: 'Kanit';
+    font-size: 22px;
+    font-weight: 300;
+}
+
+hr {
+    display: none;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* DENTRO CONTENEDORES */
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+input, select, textarea {
+    background-color: black;
+    color: white;
+    transition: .1s all;
+}
+
+.inputContainer [type="text"], [type="email"]{
+    width: 70%;
+    height: 40px;
+    text-align: center;
+    border-width: 2px;
+    border-image: linear-gradient(152deg, rgba(9,0,113,1) 0%, rgba(21,21,204,1) 53%, rgba(0,212,255,1) 100%) 1;
+    margin: 2%;
+}
+
+.inputContainer [type="text"]::placeholder, [type="email"]::placeholder {
+    color: #a1a1a1;
+    margin-right: 1%;
+}
+
+.inputContainer select {
+    width: 70%;
+    height: 40px;
+    text-align: center;
+    color: #a1a1a1;
+    border-width: 2px;
+    border-image: linear-gradient(152deg, rgba(9,0,113,1) 0%, rgba(21,21,204,1) 53%, rgba(0,212,255,1) 100%) 1;
+    margin: 2%;
+}
+
+.inputContainer textarea {
+    width: 70%;
+    height: 150px;
+    border-width: 2px;
+    border-image: linear-gradient(152deg, rgba(9,0,113,1) 0%, rgba(21,21,204,1) 53%, rgba(0,212,255,1) 100%) 1;
+    margin: 2%;
+}
+
+.inputContainer .sexo {
+    margin: 2%;
+}
+
+.inputContainer [type="radio"] {
+    margin: 5px;
+}
+
+.actividades p {
+    font-size: 14px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.actividades div p {
+    font-size: 16px;
+}
+
+.actividades [type="checkbox"] {
+    margin-left: 1%;
+}
+
+.condicionesYnovedades {
+    color: white;
+}
+
+.condicionesYnovedades div {
+    margin-bottom: 2%;
+}
+
+.condicionesYnovedades div p {
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
+
+.botones {
+    width: 25%;
+    text-align: center;
+}
+
+.botones button {
+    background-color: rgba(0, 0, 0, 0.623);
+    color: #ffffff;
+    border-width: 2px;
+    border-image: linear-gradient(152deg, rgba(9,0,113,1) 0%, rgba(21,21,204,1) 53%, rgba(0,212,255,1) 100%) 1;
+    padding: 5%;
+    margin: 4%;
+    transition: .1s all;
+}
+
+
+/* INTERACCIONES */
+
+input:focus, select:focus, textarea:focus {
+    transform: scale(1.05);
+}
+
+.botones button:hover {
+    transform: scale(1.05);
+    background-color: rgba(34, 34, 34, 0.623);
+}
+
+

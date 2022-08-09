@@ -1,0 +1,25 @@
+main {
+    position: relative;
+}
+
+.botonesCss {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 80%;
+}
+
+.botonesCss img {
+    width: 80%;
+}
+
+.botonesCss button{
+    background-color: rgb(32, 32, 32);
+    border-radius: 5px;
+    padding: 1%;
+}
+
+.botonesCss button:hover {
+    transform: scale(1.05);
+    background-color: rgb(46, 46, 46);
+}

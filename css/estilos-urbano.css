@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap');
+
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+/* CONTENEDORES */
+
+body {
+    background-image: url(../img/marc-newberry-xKnUnPEUiWA-unsplash.jpg);
+}
+
+header {
+    background-image: url(../img/pngegg.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+fieldset {
+    background-color: #EAE5DF;
+    border: 3px solid black;
+    color: #000000;
+    border-radius: 5%;
+    margin: 1%;
+    padding: 2%;
+}
+
+.datosPersonales {
+    align-self: flex-start;
+    width: 30%;
+}
+
+.datosContacto {
+    align-self: center;
+    width: 25%;
+}
+
+.actividades {
+    align-self: flex-end;
+    width: 20%;
+}
+
+.condicionesYnovedades, .botones {
+    align-self: center;
+}
+
+hr {
+    display: none;
+}
+
+legend {
+    font-family: 'Sedgwick Ave Display';
+    font-size: 25px;
+    color: white;
+    background-color: #272727;
+    border: 3px solid #000000;
+    border-radius: 100%;
+    text-align: center;
+    padding: 4%;
+    transition: .1s all;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+}
+
+.condicionesYnovedades {
+    width: 15%;
+    background-color: #EAE5DF;
+    border: 3px solid black;
+    color: #000000;
+    border-radius: 5%;
+    margin: 2%;
+}
+
+.botones {
+    text-align: center;
+    width: 20%;
+}
+
+/* DENTRO CONTENEDORES */
+
+h1 {
+    text-align: center;
+    font-family: 'Sedgwick Ave Display', sans-serif;
+    font-size: 60px;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    text-shadow: -8px 3px 0 #000000c0, -14px 7px 0 #0a0e275b;
+    padding: 1%;
+}
+
+.inputContainer select {
+    color: #6b6b6bcc;
+}
+
+.inputContainer .sexo {
+    margin-bottom: 2%;
+}
+
+.inputContainer [type="radio"], [type="checkbox"] {
+    margin-left: 3%;
+}
+
+.inputContainer [type="text"]::placeholder, [type="email"]::placeholder {
+    color: #6b6b6b9f;
+    margin-right: 1%;
+}
+
+.sedePalermo, .sedeRosario {
+    margin-top: 3%;
+}
+
+.condicionesYnovedades div {
+    margin: 3%;
+}
+
+.botones button {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    background-color: #252525;
+    color: white;
+    border: 2px solid rgb(0, 0, 0) ;
+    border-radius: 6px;
+    margin: 2%;
+    padding: 2%;
+    transition: .1s all;
+}
+
+/* INTERACCIONES */
+
+fieldset:focus-within {
+    background-color: #a8a5a0;
+}
+
+fieldset:hover > legend {
+    transform: scale(1.10);
+}
+
+button:hover {
+    background-color: #5e5e5e;
+    transform: scale(1.05);
+}
+
+

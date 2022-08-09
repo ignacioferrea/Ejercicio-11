@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&family=Roboto:wght@100;300;500;700&display=swap');
+
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+/* CONTENEDORES */
+
+body {
+    background-color: #1F2023;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+fieldset {
+    background-color: #D6E2DE;
+    border: 2px solid #4D6D63;
+    min-width: 50vw;
+    border-radius: 4px;
+    margin: 1%;
+    padding: 2%;
+}
+
+legend {
+    background-color: #4D6D63;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 1%;
+}
+
+legend span {
+    font-size: 22px;
+}
+
+hr {
+    width: 20vw;
+    border: solid 1px #1F2023;
+    border-top: dotted 16px #A6C1B9;
+    margin: 1%;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.condicionesYnovedades div{
+    width: 50vw;
+    color: #FFFFFF;
+    margin: 1%;
+}
+
+.botones {
+    width: 20vw;
+    text-align: center;
+}
+
+
+/* DENTRO CONTENEDORES */
+
+h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #E8EAED;
+    font-size: 50px;
+    border-top: solid 20px #4D6D63;
+    border-bottom: solid 20px #4D6D63;
+    border-left: solid 20px #1F2023;
+    border-right: solid 20px #1F2023;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 25vw;
+    margin-left: 25vw;
+}
+
+.inputContainer [type="text"], [type="email"]{
+    width: 70%;
+    height: 40px;
+    text-align: end;
+    border: solid 1px #4D6D63;
+    border-radius: 3px;
+    margin: 2%;
+}
+
+.inputContainer [type="text"]::placeholder, [type="email"]::placeholder {
+    color: #96B0AB;
+    margin-right: 1%;
+}
+
+.inputContainer select {
+    width: 68%;
+    height: 40px;
+    text-align: start;
+    color: #4D6D63;
+    border: solid 1px #4D6D63;
+    border-radius: 3px;
+    margin: 2%;
+}
+
+.inputContainer textarea {
+    width: 70%;
+    height: 150px;
+    margin: 2%;
+}
+
+.inputContainer .sexo {
+    margin: 2%;
+}
+
+.inputContainer [type="radio"] {
+    margin: 5px;
+}
+
+.actividades p {
+    font-size: 14px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.actividades div p {
+    font-size: 16px;
+}
+
+.actividades [type="checkbox"] {
+    margin: 1%;
+}
+
+.condicionesYnovedades div p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.botones button {
+    background-color: #2B3D37;
+    color: #96B0AB;
+    border-radius: 4px;
+    border: 1px solid #96B0AB;
+    padding: 5%;
+    margin: 4%;
+}
+
+/* INTERACCIONES */
+
+fieldset:focus-within {
+    background-color: #A6C1B9;
+}
+
+fieldset:focus-within > legend {
+    background-color: #2B3D37;
+}
+
+input:focus, textarea:focus {
+    background-color: #4D6D63;
+    color: #FFFFFF;
+}
+
+button:hover {
+    background-color: #D6E2DE;
+    color: #2B3D37;
+}
+
+
+
+
+
+
+
+
+
